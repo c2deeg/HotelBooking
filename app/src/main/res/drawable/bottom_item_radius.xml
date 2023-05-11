@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--    <solid android:color="@color/graiesh5_50"/>-->
+    <!--    <corners android:radius="25dp"/>-->
+
+    <item android:color="@color/graiesh5_50" android:state_checked="true">
+        <corners android:radius="25dp" />
+        <solid android:color="@color/graiesh5_50" />
+
+
+    </item>
+    <item android:color="@color/black35" />
+</selector>

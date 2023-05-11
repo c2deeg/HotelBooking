@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Fragments.BookedHotelFragment.BookedHotelsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/top_bar_gradient"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/tv_toMainScreen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_weight="1"
+            android:text="Hotels"
+            android:fontFamily="@font/sf_pro_display"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_notification"
+            android:layout_width="18dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="22dp"
+            android:src="@drawable/img8"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/img_menuBar"
+            android:layout_width="17dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="27dp"
+            android:src="@drawable/menu_bars_vector" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/sf_pro_display"
+        android:gravity="center"
+        android:text="Bookings"
+        android:textColor="@color/black75"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black25" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/solid_gray23_r13"
+        android:elevation="2dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:id="@+id/rl_upcoming"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:id="@+id/tv_upcoming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/sf_pro_display"
+                android:text="Upcoming"
+                android:textColor="@color/black75"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/img_upcomingSelected"
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_alignRight="@+id/tv_upcoming"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="-5dp"
+                android:src="@drawable/round_skyblue" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="14dp"
+            android:background="@color/black25" />
+
+        <RelativeLayout
+            android:id="@+id/rl_finished"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:id="@+id/tv_finished"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/sf_pro_display"
+                android:text="Finished"
+                android:textColor="@color/black22"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/img_finishedSelected"
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_alignRight="@+id/tv_finished"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="-5dp"
+                android:src="@drawable/round_skyblue"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="30dp"-->
+<!--        android:layout_marginTop="25dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="You have "-->
+<!--            android:textColor="@color/black50" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_noOfBookings"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="1"-->
+<!--            android:textColor="@color/black50" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text=" upcoming "-->
+<!--            android:textColor="@color/black50" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_booking"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="booking"-->
+<!--            android:textColor="@color/black50" />-->
+<!--    </LinearLayout>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_UpcomingBookings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_finishedBookings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+</LinearLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "677694322429",
+    "project_id": "hotel-efe77",
+    "storage_bucket": "hotel-efe77.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:677694322429:android:5142e31890c88ad01fb094",
+        "android_client_info": {
+          "package_name": "com.app.LukandaH"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "677694322429-4jun5oakft60nnm4qv5nfhbam2a1c0qq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.LukandaH",
+            "certificate_hash": "c02c38024b41068279a50a13d8fbec7c5c1f15b7"
+          }
+        },
+        {
+          "client_id": "677694322429-l1mmt5o3f2pb9n39ptuufifgbq12un5n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsx-tqSwaXZ52gva7_ll3sprr1RmtR1Fo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "677694322429-l1mmt5o3f2pb9n39ptuufifgbq12un5n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

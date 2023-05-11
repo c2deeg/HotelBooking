@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.app.LukandaH.Activities.SearchActivity.SearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/top_bar_gradient"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/tv_toMainScreen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_weight="1"
+            android:text="Hotels"
+            android:fontFamily="@font/sf_pro_display"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_notification"
+            android:layout_width="18dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="22dp"
+            android:src="@drawable/img8"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/img_menuBar"
+            android:layout_width="17dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="27dp"
+            android:src="@drawable/menu_bars_vector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/search_et_round"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/search_img"
+            app:tint="@color/graiesh4" />
+
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:background="@color/graiesh3"
+            android:hint="Search for Hotels"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textCursorDrawable="@drawable/cursordrawableblack"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/graiesh4"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/round_corners_16dp"
+        android:backgroundTint="@color/black4"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_sort"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:background="@drawable/roundcorners"
+                android:backgroundTint="@color/black"
+                android:padding="8dp"
+                android:src="@drawable/img18" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_filter"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:background="@drawable/roundcorners"
+                android:backgroundTint="@color/black"
+                android:padding="3dp"
+                android:src="@drawable/filter_list" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.34"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_map"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:background="@drawable/roundcorners"
+                android:backgroundTint="@color/black"
+                android:padding="8dp"
+                android:src="@drawable/img19"
+                app:tint="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_searchResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:visibility="visible"/>
+
+
+</LinearLayout>

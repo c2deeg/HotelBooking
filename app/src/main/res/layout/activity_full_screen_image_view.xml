@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black45"
+    tools:context=".Activities.FullScreenImageView.FullScreenImageViewActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_imageVp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/circleIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignBottom="@+id/vp_imageVp"
+        android:layout_marginBottom="40dp"
+        app:ci_drawable="@drawable/circle_vector"
+        app:ci_height="5dp"
+        app:ci_margin="10dp"
+        app:ci_width="5dp" />
+
+    <ImageView
+        android:id="@+id/img_previous"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/solid_white_r24"
+        android:paddingLeft="4dp"
+        android:paddingTop="5dp"
+        android:paddingRight="6dp"
+        android:paddingBottom="5dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/arrow_previous_vector" />
+
+    <ImageView
+        android:id="@+id/img_next"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/solid_white_r24"
+        android:paddingLeft="6dp"
+        android:paddingTop="5dp"
+        android:paddingRight="4dp"
+        android:paddingBottom="5dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/arrow_forward_vector" />
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="25dp"
+        android:layout_height="22dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/cancel_vector" />
+</RelativeLayout>
